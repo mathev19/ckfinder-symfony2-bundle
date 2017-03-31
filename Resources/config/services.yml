@@ -6,6 +6,6 @@ services:
 
     ckfinder.connector:
         class: %ckfinder.connector.class%
-        arguments: [%ckfinder.connector.config%]
+        arguments: ['%ckfinder.connector.config%']
         calls:
-            - [offsetSet, ['authentication', @ckfinder.connector.auth]]
+            - [offsetSet, ['authentication', '@ckfinder.connector.auth']]
